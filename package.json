@@ -1,0 +1,42 @@
+{
+  "name": "repeating-cli",
+  "version": "0.0.0",
+  "description": "Repeat a string - fast",
+  "license": "MIT",
+  "repository": "sindresorhus/repeating-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "repeating": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && node test.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "repeat",
+    "repeating",
+    "string",
+    "str",
+    "text",
+    "fill"
+  ],
+  "dependencies": {
+    "meow": "^3.3.0",
+    "repeating": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4",
+    "xo": "*"
+  }
+}
