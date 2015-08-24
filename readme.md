@@ -1,6 +1,6 @@
 # repeating-cli [![Build Status](https://travis-ci.org/sindresorhus/repeating-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/repeating-cli)
 
-> Repeat a string - fast
+> Repeat a string
 
 
 ## Install

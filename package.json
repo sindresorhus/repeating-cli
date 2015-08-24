@@ -1,7 +1,7 @@
 {
   "name": "repeating-cli",
   "version": "1.0.0",
-  "description": "Repeat a string - fast",
+  "description": "Repeat a string",
   "license": "MIT",
   "repository": "sindresorhus/repeating-cli",
   "author": {
