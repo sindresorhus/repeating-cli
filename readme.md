@@ -16,11 +16,13 @@ $ npm install --global repeating-cli
 $ repeating --help
 
   Usage
-    $ repeating <string> <count>
+    $ repeating <count> [string]
 
-  Example
-    $ repeating 'unicorn ' 2
-    unicorn unicorn 
+  Examples
+    $ echo "foo$(repeating 10)bar"
+    foo          bar
+    $ repeating 3 'unicorn '
+    unicorn unicorn unicorn
 ```
 
 
@@ -31,4 +33,4 @@ $ repeating --help
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

@@ -16,7 +16,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && node test.js"
+    "test": "xo && ava"
   },
   "files": [
     "cli.js"
@@ -29,14 +29,19 @@
     "string",
     "str",
     "text",
-    "fill"
+    "fill",
+    "fast"
   ],
   "dependencies": {
-    "meow": "^3.3.0",
-    "repeating": "^2.0.0"
+    "meow": "^3.7.0",
+    "repeating": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "0.0.4",
+    "ava": "*",
+    "execa": "^0.4.0",
     "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }

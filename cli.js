@@ -1,27 +1,24 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var repeating = require('repeating');
+const meow = require('meow');
+const repeating = require('repeating');
 
-var cli = meow({
-	help: [
-		'Usage',
-		'  $ repeating <string> <count>',
-		'',
-		'Example',
-		'  $ repeating \'unicorn \' 2',
-		'  unicorn unicorn '
-	]
+const cli = meow(`
+	Usage
+	  $ repeating <count> [string]
+
+	Examples
+	  $ echo "foo$(repeating 10)bar"
+	  foo          bar
+	  $ repeating 3 'unicorn '
+	  unicorn unicorn unicorn
+`, {
+	string: ['_']
 });
 
 if (cli.input.length === 0) {
-	console.error('Specify a `string` and `count`');
-	process.exit(1);
-}
-
-if (cli.input.length === 1) {
 	console.error('Specify how many times to repeat the string');
 	process.exit(1);
 }
 
-console.log(repeating(cli.input[0], Number(cli.input[1])));
+console.log(repeating(Number(cli.input[0]), cli.input[1]));
