@@ -1,4 +1,4 @@
-# repeat-cli [![Build Status](https://travis-ci.org/sindresorhus/repeat-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/repeat-cli)
+# repeating-cli [![Build Status](https://travis-ci.org/sindresorhus/repeating-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/repeating-cli)
 
 > Repeat text
 
@@ -6,22 +6,22 @@
 ## Install
 
 ```
-$ npm install --global repeat-cli
+$ npm install --global repeating-cli
 ```
 
 
 ## Usage
 
 ```
-$ repeat --help
+$ repeating --help
 
   Usage
-    $ repeat <count> [string]
+    $ repeating <count> [string]
 
   Examples
-    $ echo "foo$(repeat 10)bar"
+    $ echo "foo$(repeating 10)bar"
     foo          bar
-    $ repeat 3 'unicorn '
+    $ repeating 3 'unicorn '
     unicorn unicorn unicorn
 ```
 

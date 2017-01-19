@@ -4,12 +4,12 @@ const meow = require('meow');
 
 const cli = meow(`
 	Usage
-	  $ repeat <count> [string]
+	  $ repeating <count> [string]
 
 	Examples
-	  $ echo "foo$(repeat 10)bar"
+	  $ echo "foo$(repeating 10)bar"
 	  foo          bar
-	  $ repeat 3 'unicorn '
+	  $ repeating 3 'unicorn '
 	  unicorn unicorn unicorn
 `, {
 	string: ['_']

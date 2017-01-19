@@ -1,16 +1,16 @@
 {
-  "name": "repeat-cli",
+  "name": "repeating-cli",
   "version": "2.1.0",
   "description": "Repeat text",
   "license": "MIT",
-  "repository": "sindresorhus/repeat-cli",
+  "repository": "sindresorhus/repeating-cli",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
   "bin": {
-    "repeat": "cli.js"
+    "repeating": "cli.js"
   },
   "engines": {
     "node": ">=4"
