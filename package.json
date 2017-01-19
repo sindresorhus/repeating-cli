@@ -1,19 +1,19 @@
 {
-  "name": "repeating-cli",
+  "name": "repeat-cli",
   "version": "2.0.0",
-  "description": "Repeat a string",
+  "description": "Repeat text",
   "license": "MIT",
-  "repository": "sindresorhus/repeating-cli",
+  "repository": "sindresorhus/repeat-cli",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
   "bin": {
-    "repeating": "cli.js"
+    "repeat": "cli.js"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -29,19 +29,14 @@
     "string",
     "str",
     "text",
-    "fill",
-    "fast"
+    "fill"
   ],
   "dependencies": {
-    "meow": "^3.7.0",
-    "repeating": "^3.0.0"
+    "meow": "^3.7.0"
   },
   "devDependencies": {
     "ava": "*",
-    "execa": "^0.4.0",
+    "execa": "^0.6.0",
     "xo": "*"
-  },
-  "xo": {
-    "esnext": true
   }
 }

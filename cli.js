@@ -1,16 +1,15 @@
 #!/usr/bin/env node
 'use strict';
 const meow = require('meow');
-const repeating = require('repeating');
 
 const cli = meow(`
 	Usage
-	  $ repeating <count> [string]
+	  $ repeat <count> [string]
 
 	Examples
-	  $ echo "foo$(repeating 10)bar"
+	  $ echo "foo$(repeat 10)bar"
 	  foo          bar
-	  $ repeating 3 'unicorn '
+	  $ repeat 3 'unicorn '
 	  unicorn unicorn unicorn
 `, {
 	string: ['_']
@@ -21,4 +20,7 @@ if (cli.input.length === 0) {
 	process.exit(1);
 }
 
-console.log(repeating(Number(cli.input[0]), cli.input[1]));
+const count = Number(cli.input[0]);
+const text = cli.input[1] || ' ';
+
+console.log(text.repeat(count));
