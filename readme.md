@@ -1,4 +1,4 @@
-# repeating-cli [![Build Status](https://travis-ci.org/sindresorhus/repeating-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/repeating-cli)
+# repeating-cli
 
 > Repeat text
 
