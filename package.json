@@ -1,42 +1,44 @@
 {
-  "name": "repeating-cli",
-  "version": "2.2.0",
-  "description": "Repeat text",
-  "license": "MIT",
-  "repository": "sindresorhus/repeating-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "repeating": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "repeat",
-    "repeating",
-    "string",
-    "str",
-    "text",
-    "fill"
-  ],
-  "dependencies": {
-    "meow": "^3.7.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.6.0",
-    "xo": "*"
-  }
+	"name": "repeating-cli",
+	"version": "2.2.0",
+	"description": "Repeat text",
+	"license": "MIT",
+	"repository": "sindresorhus/repeating-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"bin": {
+		"repeating": "./cli.js"
+	},
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"repeat",
+		"repeating",
+		"string",
+		"str",
+		"text",
+		"fill"
+	],
+	"dependencies": {
+		"meow": "^9.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"execa": "^5.0.0",
+		"xo": "^0.39.1"
+	}
 }

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
+import meow from 'meow';
 
 const cli = meow(`
 	Usage
@@ -11,9 +10,7 @@ const cli = meow(`
 	  foo          bar
 	  $ repeating 3 'unicorn '
 	  unicorn unicorn unicorn
-`, {
-	string: ['_']
-});
+`);
 
 if (cli.input.length === 0) {
 	console.error('Specify how many times to repeat the string');

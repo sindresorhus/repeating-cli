@@ -1,6 +1,7 @@
 import test from 'ava';
 import execa from 'execa';
 
-test(async t => {
-	t.is(await execa.stdout('./cli.js', ['2', 'x']), 'xx');
+test('main', async t => {
+	const {stdout} = await execa('./cli.js', ['2', 'x']);
+	t.is(stdout, 'xx');
 });

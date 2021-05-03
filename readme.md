@@ -2,13 +2,11 @@
 
 > Repeat text
 
-
 ## Install
 
 ```
 $ npm install --global repeating-cli
 ```
-
 
 ## Usage
 
@@ -24,8 +22,3 @@ $ repeating --help
     $ repeating 3 'unicorn '
     unicorn unicorn unicorn
 ```
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
