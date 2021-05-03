@@ -1,6 +1,6 @@
 {
 	"name": "repeating-cli",
-	"version": "2.2.0",
+	"version": "3.0.0",
 	"description": "Repeat text",
 	"license": "MIT",
 	"repository": "sindresorhus/repeating-cli",
